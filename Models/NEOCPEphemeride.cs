@@ -34,8 +34,8 @@ namespace NINA.RBarbera.Plugin.NeocpHelper.Models {
             var ra = AstroUtil.HMSToDegrees(s.Substring(18, 8));
             var dec = AstroUtil.DMSToDegrees(s.Substring(29, 9));
             var v = Double.Parse(s.Substring(69, 4), CultureInfo.InvariantCulture);
-            var speedRA = Double.Parse(s.Substring(76, 5), CultureInfo.InvariantCulture);
-            var speedDec = Double.Parse(s.Substring(85, 5), CultureInfo.InvariantCulture);
+            var speedRA = Double.Parse(s.Substring(76, 7), CultureInfo.InvariantCulture);
+            var speedDec = Double.Parse(s.Substring(85, 7), CultureInfo.InvariantCulture);
 
             return new NEOCPEphemeride(dateTime, ra, dec, v, speedRA, speedDec, 0);
         }
