@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "NINA.RBarbera.Plugin.NEOCPHelper": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Executable",
+      "executablePath": "D:\\Program Files\\N.I.N.A. - Nighttime Imaging 'N' Astronomy\\NINA.exe"
+    }
+  }
+}
